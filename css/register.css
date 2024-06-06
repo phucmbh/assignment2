@@ -1,0 +1,100 @@
+/* START REGISTER */
+
+#register {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+#register-one {
+  width: 100%;
+  text-align: center;
+}
+
+#register-two {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#register-two h2 {
+  display: block;
+}
+
+#register-form {
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: auto;
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.field-label {
+  display: inline-block;
+  width: 120px;
+}
+
+.field-input {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.field-input-radio {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+input.field-input,
+select.field-input {
+  padding: 10px;
+}
+
+#field-postcode {
+  display: inline-block;
+  width: 150px;
+}
+
+#button-submit > input {
+  margin: auto;
+}
+
+#button-submit > input {
+  cursor: pointer;
+  width: 100px;
+  background: #20b2aa;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  display: block;
+}
+
+#button-submit > input:hover {
+  background: #252925;
+}
+/* END REGISTER */
+
+/* FOR MOBILE */
+@media screen and (max-width: 1023px) {
+  #register-one h1 {
+    font-size: 14px;
+  }
+
+  #register-form {
+    width: 100%;
+    padding: 10% 4%;
+  }
+
+  .container {
+    padding: 10% 5%;
+  }
+
+  .container-content {
+    padding: 0;
+  }
+}
+/* END FOR MOBILE */

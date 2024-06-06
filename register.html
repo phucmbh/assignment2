@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page contains my register details" />
+    <meta name="keywords" content="Thien An Tran, digital space, journey" />
+    <meta name="author" content="Thien An Tran" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#register" class="skip">Skip to main content</a>
+      <a href="index.html" class="logo"
+        ><img src="images/logo.png" alt="Logo"
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="index.html" class="nav-menu-link">Home</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="register.html" class="nav-menu-link">Register</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="order.html" class="nav-menu-link">Order</a>
+        </li>
+
+        <li class="nav-menu-item">
+          <a href="features.html" class="nav-menu-link">Features</a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </header>
+
+    <main class="container">
+      <article id="register" class="container-content">
+        <section id="register-one">
+          <h1 class="title">Register</h1>
+        </section>
+        <section id="register-two">
+          <div class="clearfix"></div>
+          <form
+            id="register-form"
+            method="post"
+            action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"
+          >
+            <div class="field">
+              <label class="field-label" for="username"> Username: </label>
+              <input
+                id="username"
+                class="field-input"
+                placeholder="Enter your username"
+                type="text"
+                name="name"
+                autofocus
+              />
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="password"> Password: </label>
+              <input
+                class="field-input"
+                id="password"
+                class="input-item"
+                placeholder="Enter your password"
+                type="password"
+                name="password"
+              />
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="email"> Email: </label>
+              <input
+                class="field-input"
+                id="email"
+                placeholder="Enter your email"
+                type="email"
+                name="email"
+              />
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="address"> Address: </label>
+              <input
+                class="field-input"
+                id="address"
+                placeholder="Enter your address"
+                type="address"
+                name="address"
+              />
+            </div>
+
+            <div id="field-postcode" class="field">
+              <label class="field-label" for="postcode"> Postcode: </label>
+              <input
+                class="field-input"
+                id="postcode"
+                placeholder="Enter your postcode"
+                type="postcode"
+                name="postcode"
+              />
+            </div>
+
+            <div class="field">
+              <p class="field-label">Gender:</p>
+              <div class="field-input">
+                <div class="field-input-radio">
+                  <input type="radio" id="male" name="gender" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div class="field-input-radio">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field-label checkbox">Favourite item:</div>
+              <div class="field-input">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="item1"
+                    name="item1"
+                    value="Coca-Cola® Vanilla"
+                  />
+                  <label for="item1">Coca-Cola® Vanilla</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="item2"
+                    name="item2"
+                    value="Coca-Cola® Zero Sugar"
+                  />
+                  <label for="item2">Coca-Cola® Zero Sugar</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="item3"
+                    name="item3"
+                    value="Sparkling Water"
+                  />
+                  <label for="item3">Sparkling Water</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="language">Language:</label>
+              <select class="field-input" name="language" id="language">
+                <option value="">--Please choose a language--</option>
+                <option value="english">English</option>
+                <option value="vietnam">Vietnam</option>
+              </select>
+            </div>
+            <div class="clearfix"></div>
+
+            <div id="button-submit">
+              <input type="submit" value="Register" />
+            </div>
+          </form>
+        </section>
+      </article>
+
+      <div class="clearfix"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Thien An Tran</p>
+    </footer>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>

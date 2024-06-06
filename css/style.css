@@ -1,0 +1,166 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  background: #eee;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #20b2aa;
+  transition: 0.3s ease all;
+}
+
+a:hover {
+  color: #444;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #fff;
+  height: auto;
+  padding: 56px 56px;
+  min-height: 80vh;
+}
+
+.container .title {
+  width: 100%;
+  color: #20b2aa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 0 30px 0;
+  text-align: center;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container-content {
+  padding: 0 50px;
+  height: auto;
+}
+
+.container-content h2 {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin: 10px auto;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+/* HEADER */
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.skip {
+  background: #20b2aa;
+  color: black;
+  height: 30px;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip:focus {
+  transform: translateY(0%);
+}
+
+.nav-menu-link {
+  color: #20b2aa;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 30px 20px;
+}
+
+.nav-menu-link:hover {
+  background-color: #20b2aa;
+  color: #fff;
+}
+
+.nav-menu-item {
+  display: inline-block;
+}
+
+.logo {
+  float: left;
+  padding-top: 15px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-menu {
+  float: right;
+  margin: 0;
+}
+
+/* END HEADER */
+
+/* FOODTER */
+footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #20b2aa;
+  padding: 20px 0;
+}
+
+/* END FOOTER */
+
+/* FOR MOBILE */
+@media screen and (max-width: 1023px) {
+  .logo {
+    display: none;
+  }
+
+  .nav-menu-link {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .nav-menu {
+    float: none;
+    display: inline-block;
+    margin: auto;
+  }
+
+  .header {
+    text-align: center;
+  }
+}
+/* END FOR MOBILE */
