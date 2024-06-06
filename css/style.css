@@ -22,10 +22,6 @@ a {
   transition: 0.3s ease all;
 }
 
-a:hover {
-  color: #444;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -103,6 +99,11 @@ hr {
   letter-spacing: 0.5px;
   display: inline-block;
   padding: 30px 20px;
+}
+
+.active {
+  color: #fff;
+  background-color: #20b2aa;
 }
 
 .nav-menu-link:hover {
