@@ -1,0 +1,23 @@
+#features-two h2 {
+  font-size: 20px;
+}
+
+.items {
+  margin-left: 15px;
+}
+
+.item {
+  margin: 10px 0;
+}
+
+/* FOR MOBILE */
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 10% 5%;
+  }
+
+  .container-content {
+    padding: 0;
+  }
+}
+/* END FOR MOBILE */

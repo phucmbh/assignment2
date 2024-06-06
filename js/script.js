@@ -6,7 +6,6 @@ console.log(navMenuLink);
 console.log(pathname);
 
 navMenuLink.forEach((navLink) => {
-  const navPathname = new URL(navLink.href).pathname;
-  if (pathname === navPathname || pathname === '/')
-    navLink.classList.add('active');
+  const navLinkPathname = new URL(navLink.href).pathname;
+  if (pathname === navLinkPathname) navLink.classList.add('active');
 });

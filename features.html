@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Animation</title>
+    <title>Order</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The list of implemented animation throughout this website"
-    />
+    <meta name="description" content="This page contains my order details" />
     <meta name="keywords" content="Thien An Tran, digital space, journey" />
     <meta name="author" content="Thien An Tran" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link
-      href="css/desktop.css"
-      rel="stylesheet"
-      media="screen and (min-width:1024px)"
-    />
-    <link
-      href="css/mobile.css"
-      rel="stylesheet"
-      media="screen and (max-width:1023px)"
-    /> -->
+    <link rel="stylesheet" href="css/features.css" />
   </head>
 
   <body>
     <header class="header">
-      <a href="#contact" class="skip">Skip to main content</a>
+      <a href="#order" class="skip">Skip to main content</a>
       <a href="index.html" class="logo"
         ><img src="images/logo.png" alt="Logo"
       /></a>
@@ -34,7 +23,7 @@
           <a href="index.html" class="nav-menu-link">Home</a>
         </li>
         <li class="nav-menu-item">
-          <a href="register.html" class="nav-menu-link">Register</a>
+          <a href="register.html" class="nav-menu-link">Rigister</a>
         </li>
         <li class="nav-menu-item">
           <a href="order.html" class="nav-menu-link">Order</a>
@@ -46,32 +35,45 @@
       </ul>
       <div class="clearfix"></div>
     </header>
-    <main class="container">
-      <div class="title">
-        <h1>Animation</h1>
-      </div>
 
-      <div id="animation">
-        <div class="container-content">
-          <h2>List animation</h2>
-          <ol>
-            <li>
-              Typing and blink caret: Link to where the animation is
-              implemented: <a href="index.html">Link</a>
+    <main class="container">
+      <article id="features" class="container-content">
+        <section id="features-one">
+          <h1 class="title">Features</h1>
+        </section>
+        <section id="features-two">
+          <h2>List the features that I have implemented</h2>
+
+          <ol class="items">
+            <li class="item">
+              Highlight the menu item in the navigator corresponding to the
+              current web page: <a href="/index.html">Link 1</a>,
+              <a href="/register.html">Link 2</a>,
+              <a href="/order.html">Link 3</a>,
+              <a href="/features.html">Link 4</a>
             </li>
-            <li>
-              Fade in: Link to where the animation is implemented:
-              <a href="about.html">Link 1</a>,
-              <a href="contact.html">Link 2</a>,
-              <a href="animation.html">Link 3</a>
+            <li class="item">
+              Create a checkbox with the label "same as delivery":
+              <a href="/order.html">Link </a>
+            </li>
+            <li class="item">
+              Allow users to choose from three types of credit card: Visa,
+              Mastercard and American Express. Based on the type of credit card,
+              limit the length of the credit card number: 16 digits for Visa and
+              Mastercard, 15 digits for American Express:
+              <a href="/order.html">Link </a>
             </li>
           </ol>
-        </div>
-      </div>
+        </section>
+      </article>
+
+      <div class="clearfix"></div>
     </main>
+
     <footer>
       <p>&copy; 2024 Thien An Tran</p>
     </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
