@@ -38,9 +38,6 @@
 
     <main class="container">
       <article id="order" class="container-content">
-        <section id="order-one">
-          <h1 class="title">Order</h1>
-        </section>
         <section id="order-two">
           <div class="clearfix"></div>
           <form
@@ -48,9 +45,10 @@
             method="post"
             action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"
           >
+            <h1 class="title">Order</h1>
             <div class="field">
               <div class="field-label">Shipping method:</div>
-              <div class="field-input">
+              <div class="field-input no-border">
                 <div class="field-input-radio">
                   <input
                     type="radio"
@@ -98,7 +96,7 @@
                 class="field-input"
                 id="billing-address"
                 placeholder="Enter your billing address"
-                type="billing-address"
+                type="text"
                 name="billing-address"
               />
             </div>
@@ -131,7 +129,7 @@
 
             <div class="field">
               <div class="field-label">Payment method:</div>
-              <div class="field-input">
+              <div class="field-input no-border">
                 <div class="field-input-radio">
                   <input
                     type="radio"
@@ -155,7 +153,7 @@
 
             <div id="credit-card" class="field">
               <div class="field-label">Type of credit card:</div>
-              <div class="field-input">
+              <div class="field-input no-border">
                 <div class="field-input-radio">
                   <input type="radio" id="visa" name="card" value="visa" />
                   <label for="visa">Visa</label>
@@ -189,7 +187,7 @@
                   class="field-input"
                   id="card"
                   placeholder="Enter your card number"
-                  type="number"
+                  type="text"
                   name="card-number"
                 />
               </div>

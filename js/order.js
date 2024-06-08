@@ -1,20 +1,20 @@
 // Get element of form
-let delivery = document.getElementById('delivery');
-let pickup = document.getElementById('pick-up');
-let deliveryAddresss = document.getElementById('delivery-addresss');
-let billingAddress = document.getElementById('billing-address');
-let sameDelivery = document.getElementById('same-input');
+var delivery = document.getElementById('delivery');
+var pickup = document.getElementById('pick-up');
+var deliveryAddresss = document.getElementById('delivery-addresss');
+var billingAddress = document.getElementById('billing-address');
+var sameDelivery = document.getElementById('same-input');
 
-let contactNumber = document.getElementById('contact-number');
-let email = document.getElementById('email');
+var contactNumber = document.getElementById('contact-number');
+var email = document.getElementById('email');
 
-let payPickup = document.getElementById('pay-pickup');
-let payOnline = document.getElementById('pay-online');
-let visa = document.getElementById('visa');
-let mastercard = document.getElementById('mastercard');
-let americanExpress = document.getElementById('american-express');
-let card = document.getElementById('card');
-let orderForm = document.getElementById('order-form');
+var payPickup = document.getElementById('pay-pickup');
+var payOnline = document.getElementById('pay-online');
+var visa = document.getElementById('visa');
+var mastercard = document.getElementById('mastercard');
+var americanExpress = document.getElementById('american-express');
+var card = document.getElementById('card');
+var orderForm = document.getElementById('order-form');
 // End get element of form
 
 //Show delivery address and same as delivery address
@@ -59,27 +59,22 @@ card.addEventListener('keypress', function (e) {
 
 // Set max length credit card number is 15 when visa is chose
 visa.addEventListener('change', function () {
-  card.setAttribute('maxlength', 15);
+  card.maxLength = 15;
 });
 
 // Set max length credit card number is 15 when master card is chose
 mastercard.addEventListener('change', function () {
-  card.setAttribute('maxlength', 15);
+  card.maxLength = 15;
 });
 
 // Set max length credit card number is 16 when american express is chose
 americanExpress.addEventListener('change', function () {
-  card.setAttribute('maxlength', 16);
+  card.maxLength = 16;
 });
 
-
-
-
-
-//  Check field blank and return error message
-orderForm.addEventListener('submit', function (e) {
-  let errMessage = '';
-  e.preventDefault();
+function validate() {
+  var errMessage = '';
+  var result = true;
 
   if (!delivery.checked && !pickup.checked) {
     errMessage += 'Please choose a shipping method \n';
@@ -105,6 +100,16 @@ orderForm.addEventListener('submit', function (e) {
     }
   }
 
-  if (errMessage.length) alert(errMessage);
-  else orderForm.submit();
-});
+  if (errMessage.length) {
+    alert(errMessage);
+    result = false;
+  }
+  return result;
+}
+
+function init() {
+  var orderForm = document.getElementById('order-form');
+  orderForm.onsubmit = validate;
+}
+
+window.onload = init;

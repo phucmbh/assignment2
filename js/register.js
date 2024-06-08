@@ -1,20 +1,18 @@
-let registerForm = document.getElementById('register-form');
-let username = document.getElementById('username');
-let password = document.getElementById('password');
-let email = document.getElementById('email');
-let address = document.getElementById('address');
-let postcode = document.getElementById('postcode');
-let male = document.getElementById('male');
-let female = document.getElementById('female');
-let item1 = document.getElementById('item1');
-let item2 = document.getElementById('item2');
-let item3 = document.getElementById('item3');
-let language = document.getElementById('language');
+function validate() {
+  var username = document.getElementById('username');
+  var password = document.getElementById('password');
+  var email = document.getElementById('email');
+  var address = document.getElementById('address');
+  var postcode = document.getElementById('postcode');
+  var male = document.getElementById('male');
+  var female = document.getElementById('female');
+  var item1 = document.getElementById('item1');
+  var item2 = document.getElementById('item2');
+  var item3 = document.getElementById('item3');
+  var language = document.getElementById('language');
 
-// Check field blank and return error message
-registerForm.addEventListener('submit', function (e) {
-  let errMessage = '';
-  e.preventDefault();
+  var errMessage = '';
+  var result = true;
 
   if (!username.value.length) errMessage += 'Username is not empty\n';
 
@@ -40,6 +38,16 @@ registerForm.addEventListener('submit', function (e) {
 
   if (!language.value.length) errMessage += 'Please choose a language \n';
 
-  if (errMessage.length) alert(errMessage);
-  else registerForm.submit();
-});
+  if (errMessage.length) {
+    alert(errMessage);
+    result = false;
+  }
+  return result;
+}
+
+function init() {
+  var regForm = document.getElementById('register-form');
+  regForm.onsubmit = validate;
+}
+
+window.onload = init;

@@ -20,12 +20,18 @@
   display: block;
 }
 
+.image {
+  width: 500px;
+  height: 500px;
+}
+
 #register-form {
-  padding: 25px;
+  padding: 50px 30px;
   border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(102, 102, 102, 0.1);
   width: 500px;
   margin: auto;
+  background-color: rgb(246, 246, 246);
 }
 
 .field {
@@ -41,6 +47,12 @@
 .field-input {
   margin-top: 10px;
   width: 100%;
+  border: 2px solid rgba(98, 98, 98, 0.1);
+  border-radius: 5px;
+}
+
+.no-border {
+  border: none;
 }
 
 .field-input-radio {
@@ -76,6 +88,13 @@ select.field-input {
 #button-submit > input:hover {
   background: #252925;
 }
+
+body {
+  background: white;
+}
+
+
+
 /* END REGISTER */
 
 /* FOR MOBILE */
